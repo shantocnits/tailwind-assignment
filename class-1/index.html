@@ -1,17 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Class 1</title>
 
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-</head>
-<body>
-    <h1 class="w-1/2 bg-[#FFB84C] h-100 text-blue-500">hello</h1>
-    <h1 class="bg-[#FF485C] w-1/3 h-[100]">hello</h1>
+  </head>
+  <body>
+    <!-- width,height,color -->
+    <h1 class="w-1/2 bg-[#FFB84C] h-50 text-blue-500">hello</h1>
+    <h1 class="bg-[#FF485C] w-1/3 h-[100px]">hello</h1>
     <h1 class="bg-red-300">hello</h1>
     <h1 class="bg-red-400">hello</h1>
-    <h1 class="bg-red-500">hello</h1>
-</body>
+    <h1 class="bg-red-500 w-[100px]">hello</h1>
+    <br />
+    <!-- width,height,color -->
+
+    <!-- Typography text,font,font-wait -->
+    <p class="text-xs">typo</p>
+    <p class="text-sm">typo</p>
+    <p class="text-base">typo</p>
+    <p class="text-lg">typo</p>
+    <p class="text-xl">typo</p>
+    <p class="text-2xl">typo</p>
+    <p class="text-7xl font-light">typo</p>
+    <p class="text-7xl font-normal">typo</p>
+    <p class="text-7xl font-normal">typo</p>
+    <br />
+    <br />
+
+    <!-- line-height -->
+    <p class="w-200 leading-3">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+      numquam temporibus, modi illo neque aut iure quisquam suscipit distinctio
+      quia.
+    </p>
+    <br />
+    <p class="w-200 leading-4">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+      numquam temporibus, modi illo neque aut iure quisquam suscipit distinctio
+      quia.
+    </p>
+    <br />
+    <p class="w-200 leading-6">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+      numquam temporibus, modi illo neque aut iure quisquam suscipit distinctio
+      quia.
+    </p>
+    <br />
+    <!-- line-height -->
+
+    <!-- Text -->
+    <p class="text-left">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+      numquam temporibus, modi illo neque aut iure quisquam suscipit distinctio
+      quia.
+    </p>
+    <br />
+
+    <p class="text-center">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+      numquam temporibus, modi illo neque aut iure quisquam suscipit distinctio
+      quia.
+    </p>
+    <br />
+
+    <p class="text-right">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+      numquam temporibus, modi illo neque aut iure quisquam suscipit distinctio
+      quia.
+    </p>
+    <br />
+
+    <p class="w-100 text-purple-700/50">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+      numquam temporibus, modi illo neque aut iure quisquam suscipit distinctio
+      quia.
+    </p>
+    <br />
+
+    <p class="w-100 text-purple-700/75">
+      Lorem ipsum dolor sit amet
+      <span class="underline decoration-[#FFB84C]">consectetur</span> elit.
+      Praesentium
+      <span class="underline decoration-red-700">adipisicing</span> numquam
+      temporibus, modi illo neque aut iure quisquam suscipit distinctio quia.
+    </p>
+    <br />
+
+    <p class="w-100 text-purple-700/[.15]">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+      numquam temporibus, modi illo neque aut iure quisquam suscipit distinctio
+      quia.
+    </p>
+    <br />
+    <!-- Text -->
+    <!-- Typography text,font,font-wait -->
+
+    <!-- Padding,margin -->
+    <div class="bg-red-300 p-8">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, fuga.
+    </div>
+    <div class="bg-blue-300 px-10">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, fuga.
+    </div>
+    <div class="bg-purple-300 py-10">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, fuga.
+    </div>
+    <br />
+    <div class="bg-red-300 p-8 m-8">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, fuga.
+    </div>
+    <div class="bg-blue-300 px-10 mx-10">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, fuga.
+    </div>
+    <div class="bg-purple-300 py-10 my-10">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, fuga.
+    </div>
+    <!-- Padding,margin -->
+
+    <!-- Border radious -->
+    <div class="p-4 m-4 border rounded-sm"></div>
+    <div class="p-4 m-4 border-4 border-red-500 bg-red-200 rounded-md"></div>
+    <div class="p-4 m-4 bg-red-700 rounded-lg"></div>
+    <div class="p-4 m-4 bg-red-700 rounded-[300px]"></div>
+    <br />
+    <!-- Border radious -->
+
+    <!-- gradient color and hover effect in tailwind css -->
+    <h1 class="text-2xl font-bold text-center">hever</h1>
+    <div class="p-4 m-4 border rounded-sm bg-red-500 hover:bg-blue-300"></div> <br>
+    
+    <h1 class="text-2xl font-bold text-center">Gardient</h1>
+    <div class="p-4 m-4 border rounded-sm bg-gradient-to-r from-red-500 to-blue-500 hover:bg-gradient-to-l"></div>
+
+    <!-- gradient color and hover effect in tailwind css -->
+  </body>
 </html>
